@@ -7,11 +7,11 @@
 
   $: {
     if (state === 0) {
-      imgSrc = "/images/memory/blank.png";
+      imgSrc = "images/memory/blank.png";
     } else if (state === 1) {
-      imgSrc = `/images/memory/${name}.png`;
+      imgSrc = `images/memory/${name}.png`;
     } else {
-      imgSrc = "/images/memory/white.png";
+      imgSrc = "images/memory/white.png";
     }
   }
 </script>

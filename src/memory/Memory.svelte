@@ -69,7 +69,9 @@
     <h3>{$message}</h3>
     <p>
       Original here:
-      <a href="/memory-game">/memory-game</a>
+      <a href="https://www.youtube.com/watch?v=lhNdUVh3qCc&t=115s" target="new">
+        Ania Kubow's YouTube tutorial
+      </a>
     </p>
   </div>
 </div>

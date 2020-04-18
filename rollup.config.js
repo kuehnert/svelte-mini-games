@@ -1,6 +1,7 @@
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import copy from "rollup-plugin-copy";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 
@@ -23,6 +24,10 @@ export default {
       css: (css) => {
         css.write("build/bundle.css");
       },
+    }),
+
+    copy({
+      targets: [{ src: "public/*", dest: "build" }],
     }),
 
     // If you have external dependencies installed from

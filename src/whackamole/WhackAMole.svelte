@@ -47,7 +47,7 @@
 
 <style>
   .mole {
-    background-image: url("/images/mole.png");
+    background-image: url("images/mouse.svg");
     background-size: cover;
   }
 </style>
@@ -69,5 +69,19 @@
     <h3>Time left: {seconds}</h3>
     <h3>Score: {score}</h3>
     <h3>{message}</h3>
+
+    <p>
+      Original here:
+      <a href="https://www.youtube.com/watch?v=lhNdUVh3qCc&t=699s" target="new">
+        Ania Kubow's YouTube tutorial
+      </a>
+    </p>
+    <p>
+      <a
+        href="https://openmoji.org/library/#group=animals-nature&emoji=1F42D"
+        target="new">
+        Mouse face emoji by Sofie Ascherl
+      </a>
+    </p>
   </div>
 </div>

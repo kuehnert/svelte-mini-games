@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
       name: 'fries',
-      img: 'memory-game/images/fries.png'
+      img: '/memory-game/images/fries.png'
     },
     {
       name: 'cheeseburger',
-      img: 'memory-game/images/cheeseburger.png'
+      img: '/memory-game/images/cheeseburger.png'
     },
     {
       name: 'ice-cream',
-      img: 'memory-game/images/ice-cream.png'
+      img: '/memory-game/images/ice-cream.png'
     },
     {
       name: 'pizza',
-      img: 'memory-game/images/pizza.png'
+      img: '/memory-game/images/pizza.png'
     },
     {
       name: 'milkshake',
-      img: 'memory-game/images/milkshake.png'
+      img: '/memory-game/images/milkshake.png'
     },
     {
       name: 'hotdog',
-      img: 'memory-game/images/hotdog.png'
+      img: '/memory-game/images/hotdog.png'
     },
     {
       name: 'fries',
-      img: 'memory-game/images/fries.png'
+      img: '/memory-game/images/fries.png'
     },
     {
       name: 'cheeseburger',
-      img: 'memory-game/images/cheeseburger.png'
+      img: '/memory-game/images/cheeseburger.png'
     },
     {
       name: 'ice-cream',
-      img: 'memory-game/images/ice-cream.png'
+      img: '/memory-game/images/ice-cream.png'
     },
     {
       name: 'pizza',
-      img: 'memory-game/images/pizza.png'
+      img: '/memory-game/images/pizza.png'
     },
     {
       name: 'milkshake',
-      img: 'memory-game/images/milkshake.png'
+      img: '/memory-game/images/milkshake.png'
     },
     {
       name: 'hotdog',
-      img: 'memory-game/images/hotdog.png'
+      img: '/memory-game/images/hotdog.png'
     }
   ]
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
-      card.setAttribute('src', 'memory-game/images/blank.png')
+      card.setAttribute('src', '/memory-game/images/blank.png')
       card.setAttribute('data-id', i)
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionTwoId = cardsChosenId[1]
     if (cardsChosen[0] === cardsChosen[1]) {
       alert('You found a match')
-      cards[optionOneId].setAttribute('src', 'memory-game/images/white.png')
-      cards[optionTwoId].setAttribute('src', 'memory-game/images/white.png')
+      cards[optionOneId].setAttribute('src', '/memory-game/images/white.png')
+      cards[optionTwoId].setAttribute('src', '/memory-game/images/white.png')
       cardsWon.push(cardsChosen)
     } else {
-      cards[optionOneId].setAttribute('src', 'memory-game/images/blank.png')
-      cards[optionTwoId].setAttribute('src', 'memory-game/images/blank.png')
+      cards[optionOneId].setAttribute('src', '/memory-game/images/blank.png')
+      cards[optionTwoId].setAttribute('src', '/memory-game/images/blank.png')
       alert('Sorry, try again')
     }
     cardsChosen = []

@@ -5,6 +5,7 @@
   import MemoryGame from "./memory/MemoryGame.svelte";
   import WhackAMole from "./whackamole/WhackAMole.svelte";
 
+  export let url = "";
   let activePage;
 
   function handleClick(event) {
@@ -16,20 +17,22 @@
   });
 </script>
 
-<Router>
+<Router {url} basepath="/svelte-mini-games" }>
   <div class="ui container">
     <div class="ui segment">
       <h1>Seven JavaScript Games with Svelte!</h1>
     </div>
 
     <nav class="ui two item menu">
-      <MyLink href="/memory" {handleClick} {activePage}>Memory Game</MyLink>
-      <MyLink href="/whackamole" {handleClick} {activePage}>Whack a Mole!</MyLink>
+      <MyLink href="#/memory" {handleClick} {activePage}>Memory Game</MyLink>
+      <MyLink href="#/whackamole" {handleClick} {activePage}>
+        Whack a Mole!
+      </MyLink>
     </nav>
 
     <div class="ui segment">
-      <Route path="/memory" component={MemoryGame} />
-      <Route path="/whackamole" component={WhackAMole} />
+      <Route path="#/memory" component={MemoryGame} />
+      <Route path="#/whackamole" component={WhackAMole} />
     </div>
   </div>
 </Router>

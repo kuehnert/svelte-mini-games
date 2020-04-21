@@ -57,9 +57,9 @@
             <img
               src={`images/moles/mole${moleStyle}.png`}
               alt="Mole"
-              class="mole" />
+              class="cover mole" />
           {:else}
-            <img src={`images/moles/nomole.png`} alt="No Mole" class="mole" />
+            <img src={`images/moles/nomole.png`} alt="No Mole" class="cover" />
           {/if}
         </div>
       {/each}
